@@ -199,7 +199,7 @@ export default function Calculator() {
     setIsSubmitting(true);
 
     try {
-      const webhookUrl = import.meta.env.VITE_GHL_WEBHOOK_URL;
+      const webhookUrl = "https://services.leadconnectorhq.com/hooks/ertnTTgYtEzOMcmWgKrm/webhook-trigger/9e77b488-fdea-4040-8ce5-5d3c2db5";
 
       if (webhookUrl) {
         await fetch(webhookUrl, {
